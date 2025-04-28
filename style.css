@@ -1,0 +1,1115 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.real-estate{
+    height: 100vh;
+    width: 100%;
+    background-image: url(Assets/home\ img4.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: sticky;
+    top: 0;
+}
+  
+.real-estate::-webkit-scrollbar {
+    display: none;
+}
+  
+.header{
+    height: 14vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;  
+    position: sticky;
+    top: 0;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-menu nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+}
+
+.header-menu nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.header-menu nav ul a{
+    color: black;
+    text-decoration: none;
+}
+
+.header-menu li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    padding: 40px 0;
+}
+
+.header-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-number svg, p{
+    fill: black;
+    color: black;
+}
+
+.contact-number > p:hover{
+    cursor: pointer;
+}
+
+.profile svg{
+    fill: black;
+}
+
+.profile svg:hover{
+    cursor: pointer;
+}
+
+.creat-listing button{
+    border: 0;
+    color: white;
+    background-color: #0d5ed1;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.creat-listing button:hover{
+    cursor: pointer;
+}
+
+.home-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    gap: 10px   ;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.home-page h2{
+    opacity: 0;
+    margin-left: -400px;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.home-page p{
+    text-align: center;
+}
+
+.area-status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.area-status h3{
+    padding: 10px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.area-status h3:hover{
+    cursor: pointer;
+}
+
+.property-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 20px;
+    background-color: antiquewhite;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.looking-for, .location, .property-size, .your-budget{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.search-button button{
+    border: 0;
+    padding: 10px 60px;
+    background-color: #00aeff;
+    font-size: large;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.looking-for select{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.location select{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.property-size select{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.your-budget select{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.Featured-Listings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+    gap: 10px;
+    background-color: antiquewhite;
+}
+
+.Featured-Listings h1{
+    opacity: 0;
+    margin-left: -400px;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.listing-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 70px;
+    background-color: antiquewhite;
+}
+
+.listing-property{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.listing-details1{
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 20px;
+    height: 60%;
+    width: 100%;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    background-image: url(Assets/listing-details1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.listing-details2{
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 20px;
+    height: 300px;
+    width: 400px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    background-image: url(Assets/listing-details2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.listing-details3{
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    padding: 20px;
+    height: 300px;
+    width: 400px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    background-image: url(Assets/listing-details3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.listing-details1 p{
+    color: white;
+    background-color: #76c720;
+    padding: 5px;
+    text-decoration: none;
+}
+.listing-details1 h4{
+    color: white;
+    background-color: #2b2728;
+    padding: 5px;
+    font-size: small;
+    font-weight: 300;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.listing-details2 p{
+    color: white;
+    background-color: #76c720;
+    padding: 5px;
+    text-decoration: none;
+}
+.listing-details2 h4{
+    color: white;
+    background-color: #2b2728;
+    padding: 5px;
+    font-size: small;
+    font-weight: 300;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.listing-details3 p{
+    color: white;
+    background-color: #76c720;
+    padding: 5px;
+    text-decoration: none;
+}
+.listing-details3 a h4{
+    margin-top: 10px;
+    color: white;
+    background-color: #2b2728;
+    padding: 5px;
+    font-size: small;
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.sq-ft1{
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    text-decoration: none;
+}
+
+.sq-ft1 h3,h5{
+    text-decoration: none;
+}
+
+.featured-icons{
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.featured-icons svg{
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.listing-property > .listing-sq-ft > h3{
+    padding: 20px 20px 20px 0;
+}
+
+.listing-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.listing-property > h4{
+    padding-top: 15px;
+    margin-left: -300px;
+}
+
+.residential{
+    padding: 7% 15% 20px 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+.residential-part1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: -50px;
+}
+
+.residential-part1 h1{
+    opacity: 0;
+    margin-left: -400px;
+    padding: 30px 30px 10px 30px;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.residential-part1 p{
+    padding: 0px 30px 30px 30px;
+}
+
+.residential-part3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+    padding: 0px 30px 30px 30px;
+}
+
+.apartment{
+    opacity: 0;
+    margin-left: -400px;
+    height: 230px;
+    width: 230px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 2px;
+    background-image: url(Assets/residential-part1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.residential-part2{
+    height: 500px;
+    width: 230px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 2px;
+    background-image: url(Assets/residential-part2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.studio{
+    opacity: 0;
+    margin-right: -400px;
+    height: 230px;
+    width: 230px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 2px;
+    background-image: url(Assets/listing-details2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: ani-right 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.villa{
+    opacity: 0;
+    margin-right: -400px;
+    height: 230px;
+    width: 230px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 2px;
+    background-image: url(Assets/listing-details3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: ani-right 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.office{
+    height: 230px;
+    width: 230px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 2px;
+    background-image: url(Assets/listing-details3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.shop{
+    opacity: 0;
+    margin-right: -400px;
+    height: 230px;
+    width: 230px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 2px;
+    background-image: url(Assets/listing-details1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: ani-right 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.residential2 h1{
+    opacity: 0;
+    margin-left: -400px;
+    padding-bottom: 10px;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.residential-part4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: antiquewhite;
+}
+
+.apartment, .residential-part2, .studio, .villa, .office, .shop{
+    padding: 10px;
+}
+
+.inquiry-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1000px;
+    width: 100%;
+    background-color: #224e70;
+    margin-top: 200px;
+}
+
+.inquirys h1{
+    opacity: 0;
+    margin-left: -400px;
+    padding: 5% 5% 25% 5%;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.inquirys h2{
+    opacity: 0;
+    margin-left: -400px;
+    padding: 0% 5% 2% 5%;
+    font-size: 27px;
+    font-weight: 500;
+    color: white;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.inquirys p{
+    padding: 0 5% 5% 5%;
+    color: #a0b1bd;
+}
+
+.inquirys2 h2{
+    font-size: 27px;
+    font-weight: 500;
+    padding: 4% 5% 5% 5%;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.inquirys2 p{
+    color: #a0b1bd;
+    padding: 0 5% 5% 5%;
+}
+
+.inquirys3 > h2{
+    padding-top: 18%;
+}
+
+.inquiry-from2{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: start;
+    gap: 10px;
+    height: 770px;
+    width: 450px;
+    background-color: white;
+    padding: 30px 30px 20px 30px ;
+}
+
+.inquiry-from2 > h4{
+    padding: 10px 5px 5px 0px;
+}
+
+.inquiry-from2 > select{
+    padding: 10px 300px 10px 10px;
+    border-radius: 5px;
+}
+
+.form > h4{
+    padding: 10px 5px 15px 0px;
+}
+
+.form > select{
+    padding: 10px 230px 10px 10px;
+    border-radius: 5px;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 0;
+    gap: 40px;
+}
+
+.form-container > input{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-container2 > input{
+    padding: 10px 225px 10px 10px;
+    border-radius: 5px;
+}
+
+.location1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.location2> h4{
+    padding: 10px 10px 10px 0;
+}
+
+.location2 > select{
+    padding: 10px 70px 10px 10px;
+    border-radius: 5px;
+}
+
+.location3 > input{
+    margin-top: 40px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+
+.property1 > h4{
+    padding: 10px 10px 10px 0;
+}
+
+.property1 > select{
+    padding: 10px 240px 10px 10px;
+    border-radius: 5px;
+}
+
+.agreement > h4{
+    padding: 10px 10px 10px 0;
+}
+
+.agreement > input{
+    cursor: pointer;
+}
+
+.form-button > button{
+    border: 0;
+    padding: 10px 160px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #00aeff;
+    cursor: pointer;
+}
+
+.finest-properties{
+    background-color: antiquewhite;
+}
+
+.finest-properties > h1{
+    opacity: 0;
+    margin-left: -400px;
+    text-align: center;
+    padding: 100px 0px 10px 0px;
+    font-weight: 400;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.finest-properties > p{
+    text-align: center;
+    color: #878787;
+    margin-bottom: -70px;
+}
+
+.load-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0d5ed1;
+    background-color: antiquewhite;
+}
+
+.load-more > button{
+    padding: 10px 50px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    color: #0d5ed1;
+    border: 1px solid #0d5ed1;
+}
+
+.explore-cities{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-top: 70px;
+    background-color: antiquewhite;
+}
+
+.city-place > h3{
+    opacity: 0;
+    margin-left: -400px;
+    padding-bottom: 10px;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.city-place > p{
+    color: #4d4d4d;
+}
+
+.city1{
+    opacity: 0;
+    margin-left: -400px;
+    height: 400px;
+    width: 200px;
+    background-image: url(Assets/city1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    padding: 10px;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}   
+
+.city2{
+    opacity: 0;
+    margin-left: -400px;
+    height: 400px;
+    width: 200px;
+    background-image: url(Assets/city2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    padding: 10px;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}   
+
+.city3{
+    opacity: 0;
+    margin-right: -400px;
+    height: 400px;
+    width: 200px;
+    background-image: url(Assets/city3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    padding: 10px;
+    animation: ani-right 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}   
+
+.city4{
+    opacity: 0;
+    margin-right: -400px;
+    height: 400px;
+    width: 200px;
+    background-image: url(Assets/city4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    padding: 10px;
+    animation: ani-right 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.meet-our-agents{
+    background-color: antiquewhite;
+}
+
+.meet-our-agents > h1{
+    opacity: 0;
+    margin-left: -400px;
+    text-align: center;
+    padding: 150px 0px 10px 0px;
+    font-size: 30px;
+    font-weight: 700;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.meet-our-agents > p{
+    text-align: center;
+    color: #4d4d4d;
+    padding-bottom: 80px;
+}
+
+.agents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 50px;
+    background-color: antiquewhite;
+}
+
+.agent-member1{
+    opacity: 0;
+    margin-left: -400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.agent-member1 > img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding-bottom: 10px;
+}
+
+.agent-member1 > h2{
+    font-size: 15px;
+    font-weight: 500;
+    color: #00aeff;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.agent-member1 > h3{
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.agent-member1 > p{
+    color: #4d4d4d;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.agent-member1 > a{
+    text-decoration: none;
+    color: #00aeff;
+}
+
+.testimonials > h1{
+    opacity: 0;
+    margin-left: -400px;
+    text-align: center;
+    padding: 70px 0px 10px 0px;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.testimonials > p{
+    text-align: center;
+    padding-bottom: 50px;
+    color: #4d4d4d;
+}
+
+.testimonials-persons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.quote1, .quote2, .quote3{
+    opacity: 0;
+    margin-left: -400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    width: 350px;
+    background-color: #edf9ff;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.quote1 > p{
+    padding: 10px 30px;
+}
+
+.test-person1, .test-person2, .test-person3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.test-person1 > img{
+    border-radius: 50%;
+}
+
+.quote2 > p{
+    padding: 10px 30px;
+}
+
+.test-person2 > img{
+    border-radius: 50%;
+}
+
+.quote3 > p{
+    padding: 10px 30px;
+}
+
+.test-person3 > img{
+    border-radius: 50%;
+}
+
+.footer-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    background-color: #004274;
+    margin-top: 70px;
+}
+
+.discover > h3{
+    opacity: 0;
+    margin-left: -400px;
+    color: white;
+    padding-bottom: 5px;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+} 
+
+.discover > p{
+    padding-top: 10px;
+    color: white;
+}
+
+.contact-us > h3{
+    opacity: 0;
+    margin-left: -400px;
+    color: white;
+    padding-bottom: 10px;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.contact-us > p{
+    padding-top: 10px;
+    color: white;
+}
+
+.newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter1 > h3{
+    opacity: 0;
+    margin-left: -400px;
+    color: white;
+    padding-bottom: 10px;
+    animation: ani-left 0.5s ease-in-out forwards;
+    animation-delay: 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+.newsletter1 > input{
+    border: 0;
+    padding: 10px 300px 10px 10px;
+}
+
+.newsletter1 > p{
+    padding-top: 10px;
+    color: white;
+}
+
+.newsletter2 > button{
+    padding: 10px 50px 10px 50px;
+    background-color: #00aeff;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    border: 0;
+    border-radius: 5px;
+}
+
+.footer-section2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    width: 100%;
+    background-color: #003359;
+}
+
+.footer-section2 > p{
+    color: white;
+}
+
+.footer-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.footer-icons > a > svg{
+    fill: white;
+}
+
+
+
+
+
+
+@keyframes ani-left {
+    0% {
+      opacity: 0;
+      margin-left: -400px;
+    }
+    80% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+      margin-left: 0;
+    }
+  }
+  @keyframes ani-right {
+    0% {
+      opacity: 0;
+      margin-right: -400px;
+    }
+    80% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+      margin-right: 0;
+    }
+  }
+  
+
+
+
+  @media (min-width :1150px) {
+        .header{
+            
+        }
+  }
